@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <meta
-      name="description"
-      content="Frontend Mentor Challenge || Ahmad Ramadhan"
-    />
     <link
       rel="icon"
       type="image/png"
@@ -17,94 +13,100 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9dd8b341bf.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Frontend Mentor | E-commerce product page</title>
   </head>
   <body>
-    <main class="main_box">
+    <main class="main__box">
       <header class="header">
         <div class="images">
           <img
             src="images/icon-menu.svg"
-            alt="icon menu"
-            class="header_menu"
-            id="menu_img"
+            alt="icon-menu"
+            class="header__menu"
+            id="menu__img"
           />
-          <img src="images/logo.svg" alt="Logo" class="header_logo" />
+          <img src="images/logo.svg" alt="Logo" class="header__logo" />
         </div>
         <div class="cart">
-          <div class="box_cart">
-            <span class="cart_added"></span>
+          <div class="box__cart">
+            <span class="cart__added"></span>
             <img
               src="images/icon-cart.svg"
               alt="icon-cart"
-              class="img_cart"
+              class="img__cart"
               id="cart"
             />
           </div>
-          <img src="images/image-avatar.png" alt="Avatar" class="img_avatar" />
-          <div class="basket_modal">
-            <h2 class="basket_title">Cart</h2>
-            <div class="basket_content"></div>
+          <img src="images/image-avatar.png" alt="Avatar" class="img__avatar" />
+          <div class="basket__modal">
+            <h2 class="basket__title">Cart</h2>
+            <div class="basket__content"></div>
           </div>
         </div>
         <nav class="menu" id="menu">
           <img
             src="images/icon-close.svg"
             alt=""
-            class="img_close"
-            id="menu_close"
+            class="img__close"
+            id="menu__close"
           />
           <ul class="list">
-            <li class="menu_item">
-              <a href="" class="menu_link">Collections</a>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Collections</a>
             </li>
-            <li class="menu_item"><a href="" class="menu_link">Man</a></li>
-            <li class="menu_item"><a href="" class="menu_link">Women</a></li>
-            <li class="menu_item"><a href="" class="menu_link">About</a></li>
-            <li class="menu_item"><a href="" class="menu_link">Contact</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Man</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Women</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contact</a>
+            </li>
           </ul>
         </nav>
       </header>
       <div class="main">
         <div class="lightbox">
-          <div class="lightbox_modal">
-            <div class="lightbox_content">
+          <div class="lightbox__modal">
+            <div class="lightbox__content">
               <img
                 src="images/image-product-1.jpg"
                 alt="image-product-1"
-                class="modal_img"
+                class="modal__img"
               />
               <i class="far fa-arrow-alt-circle-left far-left"></i>
               <i class="far fa-arrow-alt-circle-right far-right"></i>
               <i class="fas fa-times modal__close"></i>
-              <div class="lightbox_thumbnail">
+              <div class="lightbox__thumbails">
                 <img
                   src="images/image-product-1-thumbnail.jpg"
                   data-index="0"
                   alt="image-product-1-thumbnail"
-                  class="img_thumbnailModal"
+                  class="img__thumbanilModal"
                 />
                 <img
                   src="images/image-product-2-thumbnail.jpg"
                   data-index="1"
                   alt="image-product-2-thumbnail"
-                  class="img_thumbnailModal"
+                  class="img__thumbanilModal"
                 />
                 <img
                   src="images/image-product-3-thumbnail.jpg"
-                  data-index="1"
+                  data-index="2"
                   alt="image-product-3-thumbnail"
-                  class="img_thumbnailModal"
+                  class="img__thumbanilModal"
                 />
                 <img
                   src="images/image-product-4-thumbnail.jpg"
-                  data-index="1"
+                  data-index="3 "
                   alt="image-product-4-thumbnail"
-                  class="img_thumbnailModal"
+                  class="img__thumbanilModal"
                 />
               </div>
             </div>
@@ -168,50 +170,43 @@
               class="img__thumbanil"
             />
           </div>
-          <article class="main__content">
-            <h1 class="main__title">Sneaker Company</h1>
-            <h2 class="main__subtitle">Fall Limited Edition Sneakers</h2>
-            <p class="main__text">
-              These low-profile sneakers are your perfect casual wear companion.
-              Featuring a durable rubber outer sole, they’ll withstand
-              everything the weather can offer.
-            </p>
-            <div class="price">
-              <p class="price__total">$125.00</p>
-              <p class="price__discount">50%</p>
-              <p class="price__original">$250.00</p>
-            </div>
-            <div class="box-content">
-              <div class="picker">
-                <img
-                  src="images/icon-minus.svg"
-                  alt="icon-minus"
-                  class="picker__img"
-                  id="picker__minus"
-                />
-                <p class="picker__number"></p>
-                <img
-                  src="images/icon-plus.svg"
-                  alt="icon-plus"
-                  class="picker__img"
-                  id="picker__plus"
-                />
-              </div>
-              <button class="button button--cart" id="addCart">
-                Add to Cart
-              </button>
-            </div>
-          </article>
         </div>
+        <article class="main__content">
+          <h1 class="main__title">Sneaker Company</h1>
+          <h2 class="main__subtitle">Fall Limited Edition Sneakers</h2>
+          <p class="main__text">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price">
+            <p class="price__total">$125.00</p>
+            <p class="price__discount">50%</p>
+            <p class="price__original">$250.00</p>
+          </div>
+          <div class="box-content">
+            <div class="picker">
+              <img
+                src="images/icon-minus.svg"
+                alt="icon-minus"
+                class="picker__img"
+                id="picker__minus"
+              />
+              <p class="picker__number"></p>
+              <img
+                src="images/icon-plus.svg"
+                alt="icon-plus"
+                class="picker__img"
+                id="picker__plus"
+              />
+            </div>
+            <button class="button button--cart" id="addCart">
+              Add to Cart
+            </button>
+          </div>
+        </article>
       </div>
     </main>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://github.com/ahmadRamadhan20">Ahmad Ramadhan</a>.
-    </div>
+    <script src="js/scrtip-dist.js"></script>
   </body>
 </html>
