@@ -1,44 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta
+      name="description"
+      content="Frontend Mentor Challenge || Ahmad Ramadhan"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <main class="main_box">
+      <header class="header">
+        <div class="images">
+          <img
+            src="images/icon-menu.svg"
+            alt="icon menu"
+            class="header_menu"
+            id="menu_img"
+          />
+          <img src="images/logo.svg" alt="Logo" class="header_logo" />
+        </div>
+        <div class="cart">
+          <div class="box_cart">
+            <span class="cart_added"></span>
+            <img
+              src="images/icon-cart.svg"
+              alt="icon-cart"
+              class="img_cart"
+              id="cart"
+            />
+          </div>
+          <img src="images/image-avatar.png" alt="Avatar" class="img_avatar" />
+          <div class="basket_modal">
+            <h2 class="basket_title">Cart</h2>
+            <div class="basket_content"></div>
+          </div>
+        </div>
+        <nav class="menu" id="menu">
+          <img
+            src="images/icon-close.svg"
+            alt=""
+            class="img_close"
+            id="menu_close"
+          />
+          <ul class="list">
+            <li class="menu_item">
+              <a href="" class="menu_link">Collections</a>
+            </li>
+            <li class="menu_item"><a href="" class="menu_link">Man</a></li>
+            <li class="menu_item"><a href="" class="menu_link">Women</a></li>
+            <li class="menu_item"><a href="" class="menu_link">About</a></li>
+            <li class="menu_item"><a href="" class="menu_link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main">
+        <div class="lightbox">
+          <div class="lightbox_modal">
+            <div class="lightbox_content">
+              <img
+                src="images/image-product-1.jpg"
+                alt="image-product-1"
+                class="modal_img"
+              />
+              <i class="far fa-arrow-alt-circle-left far-left"></i>
+              <i class="far fa-arrow-alt-circle-right far-right"></i>
+              <i class="fas fa-times modal__close"></i>
+              <div class="lightbox_thumbnail">
+                <img
+                  src="images/image-product-1-thumbnail.jpg"
+                  data-index="0"
+                  alt="image-product-1-thumbnail"
+                  class="img_thumbnailModal"
+                />
+                <img
+                  src="images/image-product-2-thumbnail.jpg"
+                  data-index="1"
+                  alt="image-product-2-thumbnail"
+                  class="img_thumbnailModal"
+                />
+                <img
+                  src="images/image-product-3-thumbnail.jpg"
+                  data-index="1"
+                  alt="image-product-3-thumbnail"
+                  class="img_thumbnailModal"
+                />
+                <img
+                  src="images/image-product-4-thumbnail.jpg"
+                  data-index="1"
+                  alt="image-product-4-thumbnail"
+                  class="img_thumbnailModal"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="container__slider">
+            <img
+              src="images/image-product-1.jpg"
+              alt="product-1"
+              class="lightbox__img"
+            />
+            <img
+              src="images/image-product-2.jpg"
+              alt="product-2"
+              class="lightbox__img"
+            />
+            <img
+              src="images/image-product-3.jpg"
+              alt="product-3"
+              class="lightbox__img"
+            />
+            <img
+              src="images/image-product-4.jpg"
+              alt="product"
+              -4
+              class="lightbox__img"
+            />
+          </div>
+          <img
+            src="images/icon-previous.svg"
+            alt="icon-previous"
+            class="arrow__left"
+          />
+          <img
+            src="images/icon-next.svg"
+            alt="icon-next"
+            class="arrow__right"
+          />
+          <div class="lightbox__thumbails">
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              data-index="0"
+              alt="image-product-1-thumbnail"
+              class="img__thumbanil img__thumbnail--active"
+            />
+            <img
+              src="images/image-product-2-thumbnail.jpg"
+              data-index="1"
+              alt="image-product-2-thumbnail"
+              class="img__thumbanil"
+            />
+            <img
+              src="images/image-product-3-thumbnail.jpg"
+              data-index="2"
+              alt="image-product-3-thumbnail"
+              class="img__thumbanil"
+            />
+            <img
+              src="images/image-product-4-thumbnail.jpg"
+              data-index="3 "
+              alt="image-product-4-thumbnail"
+              class="img__thumbanil"
+            />
+          </div>
+          <article class="main__content">
+            <h1 class="main__title">Sneaker Company</h1>
+            <h2 class="main__subtitle">Fall Limited Edition Sneakers</h2>
+            <p class="main__text">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <div class="price">
+              <p class="price__total">$125.00</p>
+              <p class="price__discount">50%</p>
+              <p class="price__original">$250.00</p>
+            </div>
+            <div class="box-content">
+              <div class="picker">
+                <img
+                  src="images/icon-minus.svg"
+                  alt="icon-minus"
+                  class="picker__img"
+                  id="picker__minus"
+                />
+                <p class="picker__number"></p>
+                <img
+                  src="images/icon-plus.svg"
+                  alt="icon-plus"
+                  class="picker__img"
+                  id="picker__plus"
+                />
+              </div>
+              <button class="button button--cart" id="addCart">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Collections
-  Men
-  Women
-  About
-  Contact
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/ahmadRamadhan20">Ahmad Ramadhan</a>.
+    </div>
+  </body>
 </html>
